@@ -1,0 +1,220 @@
+
+body{
+background-color: black;
+padding: 0%;
+margin: 0%;
+font-size: 90%;
+width: 100%;
+}
+
+
+@font-face {
+    font-family: 'leaguespartan';
+    src: url('leaguespartan-bold.eot');
+    src: url('leaguespartan-bold.eot?#iefix') format('embedded-opentype'),
+         url('leaguespartan-bold.woff2') format('woff2'),
+         url('leaguespartan-bold.woff') format('woff'),
+         url('leaguespartan-bold.ttf') format('truetype'),
+         url('leaguespartan-bold.svg#league_spartanbold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+* {
+	font-family: leaguespartan;
+	color: white;
+    box-sizing: border-box;
+}
+
+a:hover {
+	opacity: 0.8;
+	color: #cb5151;}
+	
+	a {
+		text-decoration: none;}
+			a::before {
+				content: "+";
+				color: #D86F71;
+				margin-right: 0.2em;}
+		
+h2, h3 {line-height: 0.5em;}
+
+h2 {font-size: 135%;}
+h3 {font-size: 100%;}
+
+#skip {
+	background: black;
+	z-index: 2;}
+#skip a
+{ 
+position:absolute; 
+left:-10000px; 
+top:auto; 
+width:1px; 
+height:1px; 
+overflow:hidden;
+} 
+#skip a:focus 
+{ 
+position:static; 
+width:auto; 
+height:auto; 
+} 
+
+header {
+	width: 100%;
+	height: auto;	
+	padding: 13% 0%;
+	}
+
+header img {
+    width: 80%;
+    padding: 0.5em;
+    height: auto;
+    z-index: +1;
+    position: absolute;
+  top: 0%;
+  left: 50%;
+  /* bring your own prefixes */
+ -webkit-transform: translate(-50%, -0%);
+ -moz-transform: translate(-50%, -0%);
+  -o-transform: translate(-50%, -0%);
+}
+
+header img {
+content: url("2.png")}
+
+.imagelink a::before {
+	content: none;}
+
+.detailsright {
+position: absolute;
+right: 0px;
+top: 2em;
+margin: 2.5% 5%;
+display: none;}
+
+.detailsleft {
+position: absolute;
+left: 0px;
+top: 0px;
+margin: 2.5% 5%;}
+
+.detailsright, .detailsleft, #bottom-left, #bottom-right{
+	font-size: 90%;}
+
+/**Navigation**/
+
+nav {
+	width: 100%;}
+
+.menubar {
+	 list-style:none;
+    margin:1em 0;
+    border-bottom: 0.25em solid black;
+    border-top: 0.25em solid black;
+    padding: 1em;
+    text-align:center;
+	position: relative;
+	background: white;}
+	
+.menubar a {
+	color: black;}
+
+ul { margin: 0; padding: 0; }
+
+nav li{
+    display:inline-block;
+       padding: 0.1em 0.9em;
+       margin: 0em;
+}
+nav a{
+    font-size: 100%;
+}
+
+
+	nav li:nth-of-type(3) a
+ {
+ 	color: #cb5151;
+}
+	
+/*content*/
+
+/*content*/
+
+article img {
+	width: 70%;
+	height: auto;}
+	
+article {
+	    margin-top: 2.5%;
+		margin-bottom: 20%;
+		text-align: center;}
+		
+article h2 {
+	font-size: 110%;}
+	
+
+/* The grid: Four equal sections that floats next to each other */
+section {
+	display: inline-block;
+	height: auto;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 2em;
+    padding: 0.5em;
+}
+
+/* Clear floats after the sections */
+article:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+	
+article p, article a {
+	font-family: bodoni; }
+	
+	.date {
+	border-bottom: 0.15em solid #d5e3e8;
+	border-top: 0.15em solid #d5e3e8;}
+	
+	.clicklink {
+		  border-bottom: 0.15em solid #d5e3e8;}
+
+/*footer*/
+
+footer {
+	position: relative;
+	width: 100%;
+	margin-top: 2em;
+	margin-bottom: 0.5em;}
+	
+	#bottom-left {
+	position: absolute;
+	left: 0px;
+	margin-left: 5%;
+	bottom: 0px;
+	margin-bottom: 0.5%;
+	display: none;}
+	
+#bottom-right {
+	position: absolute;
+	width: 100%;
+    text-align: center;
+    margin-bottom: 2.5%;
+    bottom: 0px;
+    font-size: 90%}
+    
+    #bottom-right * {
+    	color: white;}
+	
+#bottom-center {
+	position: absolute;
+	width: 100%;
+    text-align: center;
+    margin-bottom: 1.5%;
+    bottom: 0px;
+    display:none;}
+

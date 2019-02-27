@@ -1,0 +1,215 @@
+
+body{
+background-color: white;
+padding: 0%;
+margin: 0%;
+font-size: 90%;
+width: 100%;
+}
+
+@font-face {
+    font-family: 'leaguespartan';
+    src: url('leaguespartan-bold.eot');
+    src: url('leaguespartan-bold.eot?#iefix') format('embedded-opentype'),
+         url('leaguespartan-bold.woff2') format('woff2'),
+         url('leaguespartan-bold.woff') format('woff'),
+         url('leaguespartan-bold.ttf') format('truetype'),
+         url('leaguespartan-bold.svg#league_spartanbold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+* {
+	font-family: leaguespartan;
+	color: black;
+    box-sizing: border-box;
+}
+
+a:hover {
+	opacity: 0.8;
+	color: #cb5151;}
+	
+	a {
+		text-decoration: none;}
+			a::before {
+				content: "+";
+				color: #D86F71;
+				margin-right: 0.2em;}
+		
+h2, h3 {line-height: 0.5em;}
+
+h2 {font-size: 110%;}
+h3 {font-size: 100%;}
+
+#skip {
+	background: black;
+	z-index: 2;}
+#skip a
+{ 
+position:absolute; 
+left:-10000px; 
+top:auto; 
+width:1px; 
+height:1px; 
+overflow:hidden;
+} 
+#skip a:focus 
+{ 
+position:static; 
+width:auto; 
+height:auto; 
+} 
+
+
+header {
+	width: 100%;
+	height: auto;	
+	padding: 7% 0%;
+	}
+
+header img {
+    width: 40%;
+    padding: 0.5em;
+    height: auto;
+    z-index: +1;
+    position: absolute;
+  top: 0%;
+  left: 0%;
+  /* bring your own prefixes */
+ -webkit-transform: translate(-0%, -0%);
+ -moz-transform: translate(-0%, -0%);
+  -o-transform: translate(-0%, -0%);
+}
+
+.imagelink a::before {
+	content: none;}
+
+.detailsright {
+position: absolute;
+right: 0px;
+top: 2em;
+margin: 2.5% 5%;}
+
+.detailsleft {
+position: absolute;
+left: 0px;
+top: 0px;
+margin: 2.5% 5%;}
+
+.detailsright, .detailsleft, #bottom-left, #bottom-right{
+	font-size: 90%;}
+
+/**Navigation**/
+
+nav {
+	width: 100%;}
+
+.menubar {
+	 list-style:none;
+    margin:1em 0;
+    border-bottom: 0.25em solid black;
+    border-top: 0.25em solid black;
+    padding: 1em;
+    text-align:center;
+	position: relative;
+	background: white;}
+
+ul { margin: 0; padding: 0; }
+
+nav li{
+    display:inline-block;
+       padding: 0.8em;
+       margin: 0em;
+}
+nav a{
+    font-size: 135%;
+}
+
+	nav li:nth-of-type(1)
+ {
+ 	position: absolute;
+ 	left: 18%;
+}
+
+	nav li:nth-of-type(1) a
+ {
+ 	color: #cb5151;
+}
+	
+
+nav li:nth-of-type(2)
+ {text-align: center;
+}
+	
+	nav li:nth-of-type(3)
+ {
+ 	position: absolute;
+ 	right: 18%;
+}
+
+/*content*/
+
+.row img {
+	width: 65%;
+	height: auto;}
+	
+.row {
+		text-align: center;
+		padding-bottom: 5%;
+		padding-top: 1%;}
+
+/* The grid: Four equal columns that floats next to each other */
+.column {
+	display: inline-block;
+    width: 25%;
+    margin: 0.5em 3em;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+	
+.row p, .row a {
+	font-family: bodoni; }
+	
+	.date {
+	border-bottom: 0.15em solid #d5e3e8;
+	border-top: 0.15em solid #d5e3e8;}
+	
+	.clicklink {
+		  border-bottom: 0.15em solid #d5e3e8;}
+
+/*footer*/
+
+footer {
+	position: relative;
+	width: 100%;
+	margin-top: 2em;
+	margin-bottom: 0.5em;}
+	
+#bottom-left {
+	position: absolute;
+	left: 0px;
+	margin-left: 5%;
+	bottom: 0px;
+	margin-bottom: 0.5%;
+	font-size: 90%;}
+	
+#bottom-right {
+	position: absolute;
+	right: 0px;
+	margin-right: 5%;
+	bottom: 0px;
+	margin-bottom: 0.5%;
+	font-size: 90%;}
+	
+#bottom-center {
+	position: absolute;
+	width: 100%;
+	margin-bottom: 0.5%;
+    text-align: center;
+    bottom: 0px;
+    font-size: 90%;}
